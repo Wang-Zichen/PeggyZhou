@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
+    color: #333;
+    background-color: #fdfcf9;
+    line-height: 1.6;
+}
+
+/* Header */
+.site-header {
+    position: sticky;
+    top: 0;
+    background: rgba(253, 252, 249, 0.95);
+    border-bottom: 1px solid #eee;
+    z-index: 100;
+}
+
+.nav {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #4a4a4a;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #666;
+    font-size: 15px;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #e8833a;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 80px 24px 40px;
+}
+
+.hero-title {
+    font-size: 36px;
+    color: #3a3a3a;
+    margin-bottom: 12px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: #999;
+    letter-spacing: 1px;
+}
+
+/* Photo */
+.photo-section {
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+}
+
+.samoyed-photo {
+    width: 360px;
+    max-width: 90%;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Sections */
+.about,
+.contact {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px;
+    text-align: center;
+}
+
+.about h2,
+.contact h2 {
+    font-size: 24px;
+    color: #3a3a3a;
+    margin-bottom: 12px;
+}
+
+.about p,
+.contact p {
+    color: #777;
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 32px 24px;
+    border-top: 1px solid #eee;
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .hero-title {
+        font-size: 26px;
+    }
+
+    .nav-links {
+        gap: 16px;
+    }
+}
